@@ -1,5 +1,5 @@
 ## AdamP Optimizer &mdash; TensorFlow Implementation
-### [[Paper]](https://arxiv.org/abs/2006.08217) [[Project page]](https://clovaai.github.io/AdamP/) [[Pytorch]](https://github.com/clovaai/AdamP)
+### [[Paper]](https://arxiv.org/abs/2006.08217) [[Project page]](https://clovaai.github.io/AdamP/) [[Official Pytorch]](https://github.com/clovaai/AdamP)
 
 <div align="center">
   <img src=https://clovaai.github.io/AdamP/static/img/projection.svg>
