@@ -1,13 +1,15 @@
 ## AdamP Optimizer &mdash; Unofficial TensorFlow Implementation
 ### "Slowing Down the Weight Norm Increase in Momentum-based Optimizers"
-
-## Implemented by [Junho Kim](http://bit.ly/jhkim_ai)
 ### [[Paper]](https://arxiv.org/abs/2006.08217) [[Project page]](https://clovaai.github.io/AdamP/) [[Official Pytorch]](https://github.com/clovaai/AdamP)
 
 <div align="center">
   <img src=https://clovaai.github.io/AdamP/static/img/projection.svg>
   <img src=https://clovaai.github.io/AdamP/static/img/algorithms.svg height=400px>
 </div>
+
+
+## Validation
+I have checked that the code is working, but I couldn't confirm if the performance is the same as the offical code.
 
 ## Usage
 Usage is exactly same as [tf.keras.optimizers](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers) library!
@@ -30,9 +32,6 @@ There are two additional hyperparameters; we recommend using the default values.
 Both `SGDP` and `AdamP` support Nesterov momentum.
 - `nesterov` : enables Nesterov momentum (default: False)
 
-## Validation
-I have checked that the code is working, but I couldn't confirm if the performance is the same as the offical code.
-
 ## How to cite
 
 ```
@@ -43,3 +42,5 @@ I have checked that the code is working, but I couldn't confirm if the performan
     journal={arXiv preprint arXiv:2006.08217},
 }
 ```
+
+## Implemented by [Junho Kim](http://bit.ly/jhkim_ai)
