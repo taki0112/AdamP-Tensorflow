@@ -1,5 +1,6 @@
 ## AdamP Optimizer &mdash; Unofficial TensorFlow Implementation
 ### "Slowing Down the Weight Norm Increase in Momentum-based Optimizers"
+## Implemented by [Junho Kim](http://bit.ly/jhkim_ai)
 ### [[Paper]](https://arxiv.org/abs/2006.08217) [[Project page]](https://clovaai.github.io/AdamP/) [[Official Pytorch]](https://github.com/clovaai/AdamP)
 
 <div align="center">
@@ -42,5 +43,3 @@ Both `SGDP` and `AdamP` support Nesterov momentum.
     journal={arXiv preprint arXiv:2006.08217},
 }
 ```
-
-## Implemented by [Junho Kim](http://bit.ly/jhkim_ai)
