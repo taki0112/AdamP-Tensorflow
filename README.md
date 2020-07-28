@@ -15,9 +15,8 @@ from sgdp_tf import SGDP
 
 optimizer_adamp = AdamP(learning_rate=0.001, betas=(0.9, 0.999), weight_decay=1e-2)
 optimizer_sgdp = SGDP(learning_rate=0.1, weight_decay=1e-5, momentum=0.9, nesterov=True)
-
 ```
-
+* **Do not use with `tf.nn.scale_regularization_loss`.** Use the `weight_decay` argument.
 ## Arguments
 `SGDP` and `AdamP` share arguments with [tf.keras.optimizers.SGD](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD) and [tf.keras.optimizers.Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam).
 There are two additional hyperparameters; we recommend using the default values.
