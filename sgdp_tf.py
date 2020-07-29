@@ -91,7 +91,7 @@ class SGDP(optimizer_v2.OptimizerV2):
 
         # Weight decay
         if self.weight_decay > 0:
-            var = var * (1 - coefficients['lr'] * coefficients['weight_decay'] * wd_ratio / (1 - coefficients['momentum']))
+            var = state_ops.assign(var, var * (1 - coefficients['lr'] * coefficients['weight_decay'] * wd_ratio), use_locking=self._use_locking)
 
         var_update = state_ops.assign_sub(var, coefficients['lr'] * d_p, use_locking=self._use_locking)
 
@@ -123,7 +123,7 @@ class SGDP(optimizer_v2.OptimizerV2):
 
         # Weight decay
         if self.weight_decay > 0:
-            var = var * (1 - coefficients['lr'] * coefficients['weight_decay'] * wd_ratio / (1 - coefficients['momentum']))
+            var = state_ops.assign(var, var * (1 - coefficients['lr'] * coefficients['weight_decay'] * wd_ratio), use_locking=self._use_locking)
 
         var_update = state_ops.assign_sub(var, coefficients['lr'] * d_p, use_locking=self._use_locking)
 
