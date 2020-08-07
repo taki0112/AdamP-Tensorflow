@@ -27,7 +27,7 @@ optimizer_sgdp = SGDP(learning_rate=0.1, weight_decay=1e-5, momentum=0.9, nester
 ## Arguments
 `SGDP` and `AdamP` share arguments with [tf.keras.optimizers.SGD](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD) and [tf.keras.optimizers.Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam).
 There are two additional hyperparameters; we recommend using the default values.
-- `delta` : threhold that determines whether a set of parameters is scale invariant or not (default: 0.1)
+- `delta` : threshold that determines whether a set of parameters is scale invariant or not (default: 0.1)
 - `wd_ratio` : relative weight decay applied on _scale-invariant_ parameters compared to that applied on _scale-variant_ parameters (default: 0.1)
 
 Both `SGDP` and `AdamP` support Nesterov momentum.
