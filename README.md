@@ -19,7 +19,7 @@ Usage is exactly same as [tf.keras.optimizers](https://www.tensorflow.org/api_do
 from adamp_tf import AdamP
 from sgdp_tf import SGDP
 
-optimizer_adamp = AdamP(learning_rate=0.001, betas=(0.9, 0.999), weight_decay=1e-2)
+optimizer_adamp = AdamP(learning_rate=0.001, beta_1=0.9, beta_2=0.999, weight_decay=1e-2)
 optimizer_sgdp = SGDP(learning_rate=0.1, weight_decay=1e-5, momentum=0.9, nesterov=True)
 ```
 * **Do not use with `tf.nn.scale_regularization_loss`.** Use the `weight_decay` argument.
